@@ -71,7 +71,7 @@ const CreateArea = () => {
       
       <div className="flex flex-col gap-4 w-full">
         {notes.map(note => (
-          <div key={note.id} className="p-4 border-slate-200 border-2 rounded-md flex flex-col items-end">
+          <div key={note.id} className="p-2 border-slate-200 border-2 rounded-md flex flex-col items-end">
             <h2 className="p-2 focus:outline-none text-2xl font-semibold w-full">{note.title}</h2>
             <p className='p-2 focus:outline-none resize-none w-full'>{note.content}</p>
             <button
