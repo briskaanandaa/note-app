@@ -55,14 +55,14 @@ const CreateArea = () => {
           onChange={handleChange}
         />
         <textarea
-          className="p-2 focus:outline-none resize-none h-[60vh] w-full"
+          className="p-2 focus:outline-none resize-none h-[50vh] w-full"
           name="content"
           placeholder="Take a Note..."
           value={note.content}
           onChange={handleChange}
         />
         <button
-          className="mt-2 py-2 px-4 rounded-sm bg-slate-900 max-w-fit text-white font-medium"
+          className="mt-2 py-2 px-4 rounded-sm bg-slate-900 max-w-fit text-white font-medium hover:bg-slate-800"
           type="submit"
         >
           Add Note
@@ -75,7 +75,7 @@ const CreateArea = () => {
             <h2 className="p-2 focus:outline-none text-2xl font-semibold w-full">{note.title}</h2>
             <p className='p-2 focus:outline-none resize-none w-full'>{note.content}</p>
             <button
-              className="mt-2 py-2 px-4 rounded-sm bg-slate-900 max-w-fit text-white font-medium"
+              className="mt-2 py-2 px-4 rounded-sm bg-slate-900 max-w-fit text-white font-medium hover:bg-slate-800"
               onClick={() => handleDelete(note.id)}
             >
               Delete
